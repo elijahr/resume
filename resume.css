@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/EFpQQyG9GqCrobXxL-KRMXbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+* {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 18pt;
+}
+h2 {
+  font-size: 16pt;
+}
+h3 {
+  font-size: 14pt;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #888888;
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+.name {
+  text-align: right;
+}
+.name h1 {
+  color: black;
+  display: inline;
+}
+.name .contact {
+  margin-top: 0.5em;
+}
+.name .contact ul {
+  display: inline;
+}
+.name .contact ul li {
+  color: #888888;
+  height: 100%;
+  display: inline;
+}
+.name .contact ul li:after {
+  content: "::";
+  margin: 0 0.5em;
+  color: #cccccc;
+}
+.name .contact ul li:last-child:after {
+  margin: 0;
+  content: "";
+}
+.resume {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  page-break-after: always;
+}
+.resume section > header > h2 {
+  text-align: right;
+}
+.resume section > section {
+  border-left: 1px solid #cccccc;
+  padding-bottom: 1.5em;
+}
+.summary {
+  margin-top: 2em;
+}
+.summary p {
+  margin: 0.8em 0 0 0;
+}
+.summary p:first-child {
+  margin-top: 0;
+}
+.experience header h3,
+.education header h3 {
+  display: inline;
+  margin-right: 0.3em;
+}
+.experience p,
+.education p {
+  margin: 0.8em 0 0 0;
+}
+.experience li,
+.education li {
+  margin: 1.8em 0 0 0;
+}
+.experience li:first-child,
+.education li:first-child {
+  margin-top: 0;
+}
+.experience li ul,
+.education li ul {
+  margin: 0.8em 0 0 0;
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+.experience li ul li,
+.education li ul li {
+  margin: 0.8em 0 0 0;
+}
+.experience aside,
+.education aside {
+  display: inline;
+  color: #888888;
+  font-size: 8pt;
+}
+.experience aside:after,
+.education aside:after {
+  content: ",";
+}
+.experience aside:last-child:after,
+.education aside:last-child:after {
+  content: "";
+}
+.education aside:after {
+  content: "";
+}
+.education header {
+  margin: 0;
+}
+.education p {
+  margin: 0;
+}
+.education header + p {
+  margin: 0.8em 0 0 0;
+}
+.col-xs-3 {
+  width: 18% !important;
+}
+.col-xs-9 {
+  width: 82% !important;
+}

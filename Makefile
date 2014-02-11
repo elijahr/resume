@@ -1,11 +1,10 @@
 
 all: resume.pdf
 	
-
-resume.pdf: resume.html resume.css
-	wkhtmltopdf resume.html resume.pdf
+resume.pdf: index.html resume.css
+	wkhtmltopdf index.html resume.pdf
 	open resume.pdf
-	open -a "Google Chrome" resume.html
+	open -a "Google Chrome" index.html
 
 resume.css:
 	lessc resume.less > resume.css
