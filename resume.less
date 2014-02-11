@@ -1,0 +1,148 @@
+@grey: #ccc;
+@darkgrey: #888;
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+h1, h2, h3 {
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: @darkgrey;
+}
+
+ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  text-align: right;
+  margin-bottom: 2em;
+  h1 {
+    color: black;
+    display: inline;
+  }
+  .contact {
+    margin-top: 0.5em;
+    ul {
+      display: inline;
+      li {
+        color: @darkgrey;
+        height: 100%;
+        display: inline;
+        &:after {
+          content: "::";
+          margin: 0 0.5em;
+          color: @grey;
+        }
+        &:last-child {
+          &:after {
+            margin: 0;
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
+
+.resume {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  page-break-after: always;
+  section {
+    & > header > h2 {
+      text-align: right;
+    }
+    & > section {
+      border-left: 1px solid @grey;
+      padding-bottom: 1.5em;
+    }
+  }
+}
+
+.summary {
+  p {
+    margin: 0 0 0.8em 0;
+  }
+}
+
+.experience, .education {
+  header {
+    margin: 0 0 0.5em 0;
+    h3 {
+      margin-right: 0.5em;
+      display: inline;
+    }
+  }
+  p {
+    margin: 0 0 0.5em 0;
+  }
+  li {
+    margin: 0 0 1.8em 0;
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5em;
+      li {
+        margin: 0 0 0.5em 0;
+      }
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  aside {
+    display: inline;
+    color: @darkgrey;
+    font-size: 8pt;
+    &:after {
+      content: ",";
+    }
+    &:last-child {
+
+      &:after {
+        content: "";
+      }
+    }
+  }
+}
+
+.education {
+  aside {
+    &:after {
+      content: "";
+    }
+  }
+  header {
+    margin: 0;
+  }
+  .degree, .timeframe {
+    display: block;
+    font-size: 10pt;
+    color: black;
+  }
+}
+
+.col-xs-3 {
+  width: 18% !important;
+}
+
+.col-xs-9 {
+  width: 82% !important;
+}
