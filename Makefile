@@ -2,7 +2,7 @@
 all: resume.pdf
 	
 resume.pdf: index.html resume.css
-	wkhtmltopdf index.html resume.pdf
+	wkhtmltopdf --grayscale index.html resume.pdf
 	open resume.pdf
 	open -a "Google Chrome" index.html
 

@@ -2,19 +2,19 @@
   font-family: 'Droid Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  src: local('Droid Sans'), local('DroidSans'), url(https://github.com/w0ng/googlefontdirectory/raw/master/fonts/droidsans/DroidSans.ttf) format('ttf');
 }
 @font-face {
   font-family: 'Droid Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/EFpQQyG9GqCrobXxL-KRMXbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(https://github.com/w0ng/googlefontdirectory/raw/master/fonts/droidsans/DroidSans-Bold.ttf) format('ttf');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://github.com/w0ng/googlefontdirectory/raw/master/fonts/lato/Lato-Regular.ttf) format('ttf');
 }
 * {
   font-family: 'Lato', sans-serif;
@@ -23,13 +23,13 @@ html {
   color: black;
 }
 h1 {
-  font-size: 18pt;
-}
-h2 {
   font-size: 16pt;
 }
+h2 {
+  font-size: 12pt;
+}
 h3 {
-  font-size: 14pt;
+  font-size: 12pt;
 }
 h1,
 h2,
@@ -37,7 +37,7 @@ h3 {
   font-family: 'Droid Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: #888888;
+  color: #666666;
 }
 ul,
 p {
@@ -58,21 +58,21 @@ p {
   display: inline;
 }
 .name .contact ul li {
-  color: #888888;
+  color: #666666;
   height: 100%;
   display: inline;
 }
 .name .contact ul li:after {
   content: "::";
   margin: 0 0.5em;
-  color: #cccccc;
+  color: #777777;
 }
 .name .contact ul li:last-child:after {
   margin: 0;
   content: "";
 }
 .resume {
-  font-size: 10pt;
+  font-size: 8pt;
   margin: 0;
   padding: 0;
   clear: both;
@@ -82,7 +82,7 @@ p {
   text-align: right;
 }
 .resume section > section {
-  border-left: 1px solid #cccccc;
+  border-left: 1px solid #777777;
   padding-bottom: 1.5em;
 }
 .summary {
@@ -103,28 +103,28 @@ p {
 .education p {
   margin: 0.8em 0 0 0;
 }
-.experience li,
-.education li {
+.experience section > ul > li,
+.education section > ul > li {
   margin: 1.8em 0 0 0;
 }
-.experience li:first-child,
-.education li:first-child {
+.experience section > ul > li:first-child,
+.education section > ul > li:first-child {
   margin-top: 0;
 }
-.experience li ul,
-.education li ul {
+.experience section > ul > li ul,
+.education section > ul > li ul {
   margin: 0.8em 0 0 0;
   list-style-type: disc;
   padding-left: 1.5em;
 }
-.experience li ul li,
-.education li ul li {
+.experience section > ul > li ul li,
+.education section > ul > li ul li {
   margin: 0.8em 0 0 0;
 }
 .experience aside,
 .education aside {
   display: inline;
-  color: #888888;
+  color: #666666;
   font-size: 8pt;
 }
 .experience aside:after,
