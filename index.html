@@ -2,9 +2,11 @@
 <html>
 <head>
     <title>Elijah Rutschman - Resume</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="cssreset-min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="resume.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="resume-screen.css" type="text/css" media="screen" />
 </head>
 <body>
     <article class="resume container">
@@ -31,8 +33,9 @@
 
             <section class="col-xs-9">
                 <p>Web developer, architect, tinkerer. I'm pragmatic, a polyglot, but with heavy expertise in Python, JavaScript and CSS.</p>
-                <p>I have worked in a fast-paced development studio, at a few start-ups, and have managed Linux servers. I've worn many hats and solved many problems in the 6 years I've worked in the field.</p>
-                <p>I'm currently hacking on Web and mobile social content apps for Switchcam.</p>
+                <p>I have worked in a fast-paced development studio, at a few start-ups, and have managed Linux servers. I've worn many hats and solved many problems in the 6 years I've worked in the field.
+                    <!--workaround for unknown char that appears in wkhtmltopdf 0.10rc1--><span style="display: inline-block; width: 14px; height: 14px; z-index:1000; color: white; background-color: white;position: relative;left: -3px;">&nbsp;</span></p>
+                <p><span>I'm currently hacking on Web and mobile social content apps for Switchcam.</span></p>
                 <p>I hold a Bachelor of Science degree in Computer Science and Philosophy from Northeastern Illinois University in Chicago.</p>
             </section>
 
@@ -51,9 +54,11 @@
                         <li>Django</li>
                         <li>Celery</li>
                         <li>Fabric</li>
+                        <li>Twisted</li>
                         <li>RESTful API design</li>
                         <li>UNIX / Linux administration</li>
                         <li>Test-driven development</li>
+                        <li>gunicorn</li>
                     </ul>
                     <ul class="col-xs-4">
                         <li>JavaScript</li>
@@ -63,6 +68,8 @@
                         <li>PhoneGap / Cordova</li>
                         <li>WebSockets</li>
                         <li>git</li>
+                        <li>Redis</li>
+                        <li>nginx</li>
                     </ul>
                     <ul class="col-xs-4">
                         <li>HTML 5 / CSS 3</li>
@@ -72,6 +79,8 @@
                         <li>C</li>
                         <li>PHP / CakePHP</li>
                         <li>SQL</li>
+                        <li>Jenkins</li>
+                        <li>AWS</li>
                     </ul>
                 </div>
             </section>
@@ -126,7 +135,7 @@
                             <h3>Hagerty Consulting</h3>
                             <aside class="title">Software Engineer</aside>
                             <aside class="location">Evanston</aside>
-                            <aside class="timeframe">Jnue 2009 - March 2011</aside>
+                            <aside class="timeframe">June 2009 - March 2011</aside>
                         </header>
                         <p>Web development at a business services start-up. I worked with a small team on Perfolio, a Web application for managing client feedback.</p>
                         <ul>
